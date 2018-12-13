@@ -44,12 +44,12 @@
                             </div>
 
                         </div>
-                        <div class="card-footer">
-                            <div class="float-right">
+
+                            <div class="float-right pagination">
                                 {{ $questions->links() }}
                             </div>
-                        </div>
 
+                    </div>
                     </div>
                 </div>
             </div>
