@@ -13,8 +13,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*Route::get('/',function (){
+    return view('pages.about');
+});*/
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'PageController@about')->name('about');
+/*Route::post('/about', 'PageController@store')->name('contact.store');*/
 
 Route::get('/user/{user_id}/profile', 'ProfileController@create')->name('profile.create');
 Route::get('/user/{user_id}/profile/{profile_id}', 'ProfileController@show')->name('profile.show');
