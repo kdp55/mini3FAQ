@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>FAQ</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -100,15 +101,11 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="https://web.njit.edu/~bieber/home-images/njit-logo.jpg" alt="NJIT" style="width:100%;">
+                               <img src="https://web.njit.edu/~bieber/home-images/njit-logo.jpg" alt="NJIT" width="1297" height="492">
                             </div>
 
                             <div class="item">
-                                <img src="https://visionhelp.files.wordpress.com/2016/12/njit-logo.png?w=800" alt="IS601" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/New_Jersey_IT_seal.svg/1024px-New_Jersey_IT_seal.svg.png" alt="FAQ" style="width:100%;">
+                                <img src="https://roinjlive-fyelxbzep.netdna-ssl.com/wordpress/wp-content/uploads/2018/09/NJIT-clocktower-crop.jpg" alt="FAQ" width="1297" height="492" >
                             </div>
                         </div>
 
@@ -126,14 +123,14 @@
 
 
 
-                <div class="links">
+                {{--<div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                </div>--}}
             </div>
         </div>
     </body>

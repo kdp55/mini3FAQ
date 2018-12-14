@@ -21,12 +21,16 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+@include('includes.head')
+
+<header>
+    @include('includes.mainNav')
+
+</header>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-
-
-            @guest
+               @guest
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -35,8 +39,6 @@
                     Home
                 </a>
             @endguest
-
-
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,6 +90,8 @@
         </div>
     </nav>
 
+
+
     <main class="py-4">
         <div class="col-12">
             @include('flash.error')
@@ -97,5 +101,9 @@
         @yield('content')
     </main>
 </div>
+
+<footer>
+@include('includes.footer')
+</footer>
 </body>
 </html>
