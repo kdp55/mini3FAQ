@@ -23,10 +23,7 @@
 <body>
 @include('includes.head')
 
-<header>
-    @include('includes.mainNav')
 
-</header>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
