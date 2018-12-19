@@ -16,8 +16,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        //
-
+       //
     }
 
     /**
@@ -25,6 +24,9 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function create()
     {
         $profile = new Profile();

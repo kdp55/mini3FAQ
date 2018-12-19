@@ -64,4 +64,26 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Answer');
     }
+    public function follows()
+    {
+        return $this->hasMany('App\Follow');
+    }
+    public function following($follow_id)
+    {
+        return $this->follows()->where('follow_id', $follow_id)->first(['id']);
+    }
+   /*public function isfollowing($follow_id) {
+        return $this->belongsToMany(User::class, 'follows', 'follow_id')->withTimestamps();
+    }*/
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+   /* public function followings()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'follower_id', 'leader_id')->withTimestamps();
+    }
+    function followers()
+    {
+        return $this->belongsToMany('App\User', 'followers', 'user_id', 'follower_id');
+    }*/
 }

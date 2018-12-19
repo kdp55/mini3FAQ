@@ -12,6 +12,7 @@
                         @else()
                             {!! Form::model($profile, ['route' => ['profile.update', Auth::user()->id, $profile->id], 'method' => 'patch']) !!}
                         @endif
+
                         <div class="form-group">
                             {!! Form::label('fname', 'First Name') !!}
                             {!! Form::text('fname', $profile->fname, ['class' => 'form-control','required' => 'required']) !!}
