@@ -13,8 +13,13 @@ class FollowTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testSave()
     {
-        $this->assertTrue(true);
+        $user = factory(\App\User::class)->make();
+        $user->save();
+        $follow = factory(\App\Follow::class)->make();
+        $follow->user()->associate($user);
+        $this->assertTrue($follow->save());
+
     }
 }
