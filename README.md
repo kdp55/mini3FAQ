@@ -3,28 +3,23 @@
 It is final project of course IS601 (Web system Development).
 It gives opportunity to learn laravel concepts, sqlite, bootstrap and php storm concepts.
 
-Basically, in FAQ project, I have implemented "better UI" features. 
+Basically, in FAQ project, I have implemented "better UI" and "follow/unfollow" features. 
 
-# 1. Installation: 
+# 1. Run FAQ project:
 
-You need to add bootstrap plugins:- 
-go -> file -> settings -> plugins -> Bootstrap
-
-or can be added in app.blade.php and welcome.blade.php
-
-# 2. Run FAQ project:
-
-1. User need to open herokuapp(shown as below)
-2. User have facility to know "about" website
-3. Better outcome of UI
-4. User can login/register and create questions - answers.
+1. User need to register on website
+2. User can select "follow user" from drop-down.
+3. User can view already registered users are following or not.
+4. User can view "About" page
 
 # Deployment 
 Heroku app: https://finalis601kp.herokuapp.com/
 
 # Build with:
 Laravel - (MVC)framework for php
+   
 SQLite - Database management system
+
 Bootstrap - front end framework for website and web application
 
 # License:
