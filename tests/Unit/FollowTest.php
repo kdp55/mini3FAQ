@@ -20,6 +20,7 @@ class FollowTest extends TestCase
         $follow = factory(\App\Follow::class)->make();
         $follow->user()->associate($user);
         $this->assertTrue($follow->save());
+        //$this->assertTrue(true);
 
     }
 }
