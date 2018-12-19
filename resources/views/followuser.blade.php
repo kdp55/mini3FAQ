@@ -15,7 +15,7 @@
 
                         @foreach ($users as $user)
 
-                                <div>{{ $user->name }}</div>
+                                <div>{{ $user->email }}</div>
 
                                 @if (Auth::User()->following($user->id))
 
